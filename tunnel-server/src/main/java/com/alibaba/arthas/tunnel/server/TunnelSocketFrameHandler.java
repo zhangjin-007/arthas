@@ -10,13 +10,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.TimeUnit;
 
-<<<<<<< HEAD
-import io.netty.channel.ChannelFutureListener;
 import io.netty.handler.codec.http.websocketx.CloseWebSocketFrame;
-import io.netty.handler.codec.http.websocketx.WebSocketCloseStatus;
-=======
-import io.netty.handler.codec.http.websocketx.CloseWebSocketFrame;
->>>>>>> b045b6fa0cb88c453a5ed5b70defeac153b03cba
 import org.apache.commons.lang3.RandomStringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -36,9 +30,7 @@ import io.netty.util.concurrent.GenericFutureListener;
 import io.netty.util.concurrent.Promise;
 
 /**
- * 
  * @author hengyunabc 2019-08-27
- *
  */
 public class TunnelSocketFrameHandler extends SimpleChannelInboundHandler<WebSocketFrame> {
 
@@ -160,7 +152,7 @@ public class TunnelSocketFrameHandler extends SimpleChannelInboundHandler<WebSoc
                 tunnelSocketCtx.close();
             }
         } else {
-            tunnelSocketCtx.channel().writeAndFlush(new CloseWebSocketFrame(2000, "Can not find arthas agent by id: "+ agentId));
+            tunnelSocketCtx.channel().writeAndFlush(new CloseWebSocketFrame(2000, "Can not find arthas agent by id: " + agentId));
             logger.error("Can not find arthas agent by id: {}", agentId);
             throw new IllegalArgumentException("Can not find arthas agent by id: " + agentId);
         }
