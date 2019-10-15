@@ -39,7 +39,7 @@ English version goes [here](README.md).
 下载`arthas-boot.jar`，然后用`java -jar`的方式启动：
 
 ```bash
-wget https://alibaba.github.io/arthas/arthas-boot.jar
+curl -O https://alibaba.github.io/arthas/arthas-boot.jar
 java -jar arthas-boot.jar
 ```
 
@@ -424,6 +424,10 @@ $ classloader
 ![伙伴集团](static/zhaoshang800.png)
 ![数梦工场](static/dtdream.png)
 ![安恒信息](static/dbappsecurity.png)
+![亚信科技](static/asiainfo.png)
+![云舒写](static/yunshuxie.png)
+![微住](static/iweizhu.png)
+![月亮小屋](static/bluemoon.png)
 
 ### 洐生项目
 
