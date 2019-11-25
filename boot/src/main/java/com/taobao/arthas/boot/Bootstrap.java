@@ -347,7 +347,7 @@ public class Bootstrap {
         if (telnetPortPid > 0 && pid != telnetPortPid) {
             AnsiLog.error("Target process {} is not the process using port {}, you will connect to an unexpected process.",
                             pid, bootstrap.getTelnetPort());
-            AnsiLog.error("1. Try to restart arthas-boot, select process {}, shutdown it first with running the 'shutdown' command.",
+            AnsiLog.error("1. Try to restart arthas-boot, select process {}, shutdown it first with running the 'stop' command.",
                             telnetPortPid);
             AnsiLog.error("2. Or try to use different telnet port, for example: java -jar arthas-boot.jar --telnet-port 9998 --http-port -1");
             System.exit(1);
@@ -356,7 +356,7 @@ public class Bootstrap {
         if (httpPortPid > 0 && pid != httpPortPid) {
             AnsiLog.error("Target process {} is not the process using port {}, you will connect to an unexpected process.",
                             pid, bootstrap.getHttpPort());
-            AnsiLog.error("1. Try to restart arthas-boot, select process {}, shutdown it first with running the 'shutdown' command.",
+            AnsiLog.error("1. Try to restart arthas-boot, select process {}, shutdown it first with running the 'stop' command.",
                             httpPortPid);
             AnsiLog.error("2. Or try to use different http port, for example: java -jar arthas-boot.jar --telnet-port 9998 --http-port 9999", httpPortPid);
             System.exit(1);
@@ -430,8 +430,10 @@ public class Bootstrap {
             if (localLastestVersion == null) {
                 if (remoteLastestVersion == null) {
                     // exit
-                    AnsiLog.error("Can not find Arthas under local: {} and remote: {}", ARTHAS_LIB_DIR,
-                                    bootstrap.getRepoMirror());
+                    AnsiLog.error("Can not find Arthas under local: {} and remote maven repo mirror: {}", ARTHAS_LIB_DIR,
+                            bootstrap.getRepoMirror());
+                    AnsiLog.error(
+                            "Unable to download arthas from remote server, please download the full package according to wiki: https://github.com/alibaba/arthas");
                     System.exit(1);
                 } else {
                     needDownload = true;

@@ -6,6 +6,7 @@
 
 * help——查看命令帮助信息
 * [cat](cat.md)——打印文件内容，和linux里的cat命令类似
+* [grep]](grep.md)——匹配查找，和linux里的grep命令类似
 * [pwd](pwd.md)——返回当前的工作目录，和linux命令类似
 * cls——清空当前屏幕区域
 * session——查看当前会话的信息
@@ -13,7 +14,7 @@
 * version——输出当前目标 Java 进程所加载的 Arthas 版本号
 * history——打印命令历史
 * quit——退出当前 Arthas 客户端，其他 Arthas 客户端不受影响
-* shutdown——关闭 Arthas 服务端，所有 Arthas 客户端全部退出
+* stop/shutdown——关闭 Arthas 服务端，所有 Arthas 客户端全部退出
 * [keymap](keymap.md)——Arthas快捷键列表及自定义快捷键
 
 ## jvm相关
@@ -52,6 +53,11 @@
 * [trace](trace.md)——方法内部调用路径，并输出方法路径上的每个节点上耗时
 * [stack](stack.md)——输出当前方法被调用的调用路径
 * [tt](tt.md)——方法执行数据的时空隧道，记录下指定方法每次调用的入参和返回信息，并能对这些不同的时间下调用进行观测
+
+
+## profiler/火焰图
+
+* [profiler](profiler.md)--使用[async-profiler](https://github.com/jvm-profiling-tools/async-profiler)对应用采样，生成火焰图
 
 ## options
 

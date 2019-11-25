@@ -112,7 +112,7 @@
             <dependency>
                 <groupId>com.alibaba.middleware</groupId>
                 <artifactId>cli</artifactId>
-                <version>1.0.2</version>
+                <version>1.0.3</version>
             </dependency>
             <dependency>
                 <groupId>org.slf4j</groupId>
@@ -132,7 +132,7 @@
             <dependency>
                 <groupId>com.taobao.middleware</groupId>
                 <artifactId>logger.api</artifactId>
-                <version>0.2.6</version>
+                <version>0.2.8</version>
             </dependency>
             <dependency>
                 <groupId>com.alibaba</groupId>

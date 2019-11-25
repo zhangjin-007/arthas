@@ -4,6 +4,8 @@
 
 ![arthas](site/src/site/sphinx/arthas.png)
 
+**Arthas 正在参加2019年度最受欢迎开源中国软件评选，请大家投票支持！[查看](https://www.oschina.net/p/arthas)**
+
 [![Build Status](https://travis-ci.org/alibaba/arthas.svg?branch=master)](https://travis-ci.org/alibaba/arthas)
 [![codecov](https://codecov.io/gh/alibaba/arthas/branch/master/graph/badge.svg)](https://codecov.io/gh/alibaba/arthas)
 [![maven](https://img.shields.io/maven-central/v/com.taobao.arthas/arthas-packaging.svg)](https://search.maven.org/search?q=g:com.taobao.arthas)
@@ -428,7 +430,14 @@ $ classloader
 ![云舒写](static/yunshuxie.png)
 ![微住](static/iweizhu.png)
 ![月亮小屋](static/bluemoon.png)
-
+![大搜车](static/souche.png)
+![今日图书](static/jinritushu.png)
+![竹间智能](static/emotibot.png)
+![数字认证](static/bjca.png)
+![360金融](static/360jinrong.png)
+![安居客](static/anjuke.jpg)
+![qunar](static/qunar.png)
+![ctrip](static/ctrip.png)
 ### 洐生项目
 
 * [Bistoury: 一个集成了Arthas的项目](https://github.com/qunarcorp/bistoury)
