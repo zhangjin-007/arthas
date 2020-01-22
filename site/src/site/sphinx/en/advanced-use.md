@@ -6,14 +6,15 @@ Advanced Usage
 * help - display Arthas help
 * cls - clear the screen
 * [cat](cat.md) - Concatenate and print files
-* [grep]](grep.md) - Pattern searcher
+* [grep](grep.md) - Pattern searcher
+* [tee](tee.md) - Copies standard input to standard output, making a copy in zero or more files.
 * [pwd](pwd.md) - Return working directory name
 * session - display current session information
-* [reset](reset.md) - reset all the enhanced classes. All enhanced classes will also be reset when Arthas server is closed by `stop/shutdown`
+* [reset](reset.md) - reset all the enhanced classes. All enhanced classes will also be reset when Arthas server is closed by `stop`
 * version - print the version for the Arthas attached to the current Java process
 * history - view command history
 * quit/exit - exit the current Arthas session, without effecting other sessions
-* stop/shutdown - terminate the Arthas server, all Arthas sessions will be destroyed
+* stop - terminate the Arthas server, all Arthas sessions will be destroyed
 * [keymap](keymap.md) - keymap for Arthas keyboard shortcut
 
 ## JVM
@@ -55,9 +56,9 @@ Advanced Usage
 * [options](options.md) - check/set Arthas global options
 
 
-## profiler/frame graph
+## profiler/flame graph
 
-* [profiler](profiler.md) - use [async-profiler](https://github.com/jvm-profiling-tools/async-profiler) to generate frame graph
+* [profiler](profiler.md) - use [async-profiler](https://github.com/jvm-profiling-tools/async-profiler) to generate flame graph
 
 ## pipe
 
